@@ -3,6 +3,7 @@
 [Master of Arts in Interaction Design](https://maind.supsi.ch/)
 
 **Teachers**: Marco Lurati, Giovanni Profeta
+
 **Assistants**: Luca Draisci
 
 
