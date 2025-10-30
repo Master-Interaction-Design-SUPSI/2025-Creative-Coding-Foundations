@@ -1,7 +1,7 @@
 /* general rules */
 
 html {
-    font-size: 18px;
+    font-size: 24px;
     font-family: sans-serif;
     background-color: whitesmoke;
 }
@@ -65,14 +65,12 @@ button {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-}
-
-li {
-    display: block;
-    width: 100%;
+    gap: 1rem
 }
 
 .card-view li {
+    display: block;
+    width: 100%;
     background-color: orange;
     height: 3rem;
     border: 1px solid black;
@@ -80,7 +78,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 /* list-view */
@@ -121,4 +118,32 @@ button:hover {
 #add-btn:active {
     background-color: orangered;
     color: white;
+}
+
+/* responsive layout */
+
+@media only screen and (min-width: 600px) {
+
+    .card-view li {
+        width: calc((100% - 1rem) / 2); /* because the .card-view is flex with 1rem gap, the width calcualtion has to take into consideration the gaps too */
+        box-sizing: border-box; /* the borders with the default box-sizing propery, are outside the "width" calculation (not considered), but will lead to a wrong value. With border-box, the border is included in the width */
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    html {
+        font-size: 18px;    /* scaling everyting, the 1rem is now 18px, not 24px as for the mobile version */
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .card-view li {
+        width: calc((100% - 2rem) / 3);     /* because the .card-view is flex with 1rem gap, the width calcualtion has to take into consideration the gaps too */
+        box-sizing: border-box;     /* the borders with the default box-sizing propery, are outside the "width" calculation (not considered), but will lead to a wrong value. With border-box, the border is included in the width */
+    }
+
 }
