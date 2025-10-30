@@ -16,7 +16,6 @@ Starting from the concept of a pinboard, implement a web page that:
 
 ## Project description
 
-Add new to-do thanks to the input filed to the list with the "+" button.
+Add new to-dos to the list using the input filed and the "+" button.
 
 The view of the list can be changed between "list" and "card" using the dedicated buttons.
-
