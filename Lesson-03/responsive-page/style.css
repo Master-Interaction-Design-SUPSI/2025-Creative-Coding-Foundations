@@ -1,0 +1,165 @@
+/* Remove default browser styles */
+input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;        /* inherit font styles */
+    color: inherit;
+    outline: none;        /* optional: remove default focus outline */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F2F2F2;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container-input {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 1rem 0;
+    gap: 1rem;
+}
+
+#container-view {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0 1rem 0;
+    gap: 1rem;
+}
+
+.button-view {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    background-color: Orange;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+button {
+    width: 5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    color: white;
+}
+
+.button-view {
+    background-color: CornflowerBlue;
+}
+
+.button-view:hover {
+    background-color: RoyalBlue;
+}
+
+.button-view:active {
+    background-color: MediumBlue;
+}
+
+#button-add {
+    background-color: Orange;
+}
+
+#button-add:hover {
+    background-color: DarkOrange;
+}
+
+#button-add:active {
+    background-color: OrangeRed;
+}
+
+
+input {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+@media only screen and (min-width: 560px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    button, input, li {
+        font-size: 1.5rem
+    }
+
+    button {
+        width: 10rem;
+        height: 5rem;
+    }
+	
+    li {
+        width: calc((100% - 1rem) / 2);
+        height: 5rem;
+	}
+}
+
+@media only screen and (min-width: 8000px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    button, input, li {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    li {
+        width: calc((100% - 2rem) / 3);
+        height: 10rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+    }
+
+    button, input, li {
+        font-size: 2rem;
+    }
+	
+    li {
+        width: calc((100% - 3rem) / 4);
+        height: 14rem;
+	}
+}
