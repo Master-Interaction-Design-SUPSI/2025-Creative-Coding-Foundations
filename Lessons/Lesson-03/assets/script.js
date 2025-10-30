@@ -14,7 +14,7 @@ listButton.addEventListener('click', () => {
     console.log('List button pressed!');
 
     taskList.classList.remove('card-view');
-    taskList.classList.add('list-view');
+    taskList.classList.add('list-view');    // change the class of the list
     
 })
 
@@ -23,17 +23,20 @@ cardButton.addEventListener('click', () => {
     console.log('Card button pressed!!');
 
     taskList.classList.remove('list-view');
-    taskList.classList.add('card-view');
+    taskList.classList.add('card-view');    // change the class of the list
 })
 
 // Add
 addButton.addEventListener('click', () => {
-    console.log("Add button pressed!!!!!");
-    const inputValue = taskInput.value;
-    const listElement = document.createElement('li');
+    console.log("Add button pressed!");
 
-    listElement.innerHTML = inputValue;
+    const inputValue = taskInput.value; // get the value of the input field
 
-    taskList.appendChild(listElement);
-    taskInput.value = '';
+    const listElement = document.createElement('li');   // create a new li element
+
+    listElement.innerHTML = inputValue; // set the content of the li element with the input filed value
+
+    taskList.appendChild(listElement);  // append the li element to the ul list
+
+    taskInput.value = '';   // reset (delete) the input filed current text
 })

@@ -1,12 +1,11 @@
-# Assignment 01
+# Lesson 03
 
-## Brief
+## Goal
 
 Starting from the concept of a pinboard, implement a web page that:
 
 - is responsive (properly layout for smartphone, tablet, and desktop)
-- allows the user to add and remove elements
-- allows the user to coustomize elements (i.e. colors, size)
+- allows to add new elements to the list
 - allows the switch between two views (at least)
 
 ## Schreenshots
@@ -17,5 +16,7 @@ Starting from the concept of a pinboard, implement a web page that:
 
 ## Project description
 
-...
+Add new to-do thanks to the input filed to the list with the "+" button.
+
+The view of the list can be changed between "list" and "card" using the dedicated buttons.
 
