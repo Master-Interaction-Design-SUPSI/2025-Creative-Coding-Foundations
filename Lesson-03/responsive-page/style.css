@@ -1,15 +1,3 @@
-/* Remove default browser styles */
-input, button {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    font: inherit;        /* inherit font styles */
-    color: inherit;
-    outline: none;        /* optional: remove default focus outline */
-    box-sizing: border-box;
-}
-
 body {
     font-family: sans-serif;
     background-color: #F2F2F2;
@@ -19,25 +7,51 @@ h1 {
     text-align: center;
 }
 
-#container-input {
+/* add container */
+
+#add-container {
     width: 100%;
     display: flex;
     margin: 1rem 0 1rem 0;
     gap: 1rem;
 }
 
-#container-view {
+input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    outline: none;        /* remove default focus outline */
+    box-sizing: border-box;
+}
+
+input {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+/* view toggle container */
+
+#view-toggle-container {
     width: 100%;
     display: flex;
     margin: 1rem 0 1rem 0;
     gap: 1rem;
 }
 
-.button-view {
+#view-toggle-container button {
     width: 50%;
 }
 
-ul {
+/* task list container */
+
+/* card-view */
+
+ul.card-view {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -47,7 +61,7 @@ ul {
     align-items: center;
 }
 
-li {
+.card-view li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +70,25 @@ li {
     border-radius: 1rem;
     width: 100%;
 }
+
+/* list-view */
+
+ul.list-view {
+    display: block;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem 1rem 2rem;
+}
+
+.list-view li {
+    width: 100%;
+    height: 2rem;
+}
+
+
+/* buttons */
+
+/* global style */
 
 button {
     width: 5rem;
@@ -73,37 +106,34 @@ button:active {
     color: white;
 }
 
-.button-view {
-    background-color: CornflowerBlue;
-}
-
-.button-view:hover {
-    background-color: RoyalBlue;
-}
-
-.button-view:active {
-    background-color: MediumBlue;
-}
-
-#button-add {
+/* add button */
+#add-btn {
     background-color: Orange;
 }
 
-#button-add:hover {
+#add-btn:hover {
     background-color: DarkOrange;
 }
 
-#button-add:active {
+#add-btn:active {
     background-color: OrangeRed;
 }
 
 
-input {
-    width: 100%;
-    border: 1px solid;
-    border-radius: 1rem;
-    padding: 0 1rem 0 1rem;
+/* toggle view buttons */
+.toggle-btn {
+    background-color: CornflowerBlue;
 }
+
+.toggle-btn:hover {
+    background-color: RoyalBlue;
+}
+
+.toggle-btn:active {
+    background-color: MediumBlue;
+}
+
+/* breakpoints, responsive layout */
 
 @media only screen and (min-width: 560px) {
 
@@ -120,10 +150,18 @@ input {
         height: 5rem;
     }
 	
-    li {
+    .card-view li {
         width: calc((100% - 1rem) / 2);
         height: 5rem;
 	}
+
+    ul.list-view {
+        padding: 2rem 1rem 1rem 3rem;
+    }
+
+    .list-view li {
+        height: 3rem;
+    }
 }
 
 @media only screen and (min-width: 8000px) {
@@ -141,10 +179,20 @@ input {
         height: 5rem;
     }
 
-    li {
+    .card-view li {
         width: calc((100% - 2rem) / 3);
         height: 10rem;
 	}
+
+    ul.list-view {
+        padding: 3rem 1rem 1rem 6rem;
+    }
+
+    .list-view li {
+        height: 4rem;
+    }
+
+    
 }
 
 @media only screen and (min-width: 1024px) {
@@ -158,7 +206,7 @@ input {
         font-size: 2rem;
     }
 	
-    li {
+    .card-view li {
         width: calc((100% - 3rem) / 4);
         height: 14rem;
 	}

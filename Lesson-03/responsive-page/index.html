@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>List of cats</title>
+    <title>To-do list</title>
 </head>
 <body>
-    <h1>List of cats</h1>
+    <h1>To-Do list</h1>
 
-    <div id="container-input">
-        <input>
-        <button id="button-add">+</button>
-    </div>
+    <header>
+        <!-- Input and add button -->
+        <div id="add-container">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-btn">+</button>
+        </div>
 
-    <div id="container-view">
-        <button id="button-list-view" class="button-view">List view</button>
-        <button id="button-card-view" class="button-view">Card view</button>
-    </div>
+        <!-- View toggle -->
+        <div id="view-toggle-container">
+            <button id="list-view-btn" class="toggle-btn">List view</button>
+            <button id="card-view-btn" class="toggle-btn">Card view</button>
+        </div>
+    </header>
 
-    <ul>
-        <li>Jaguar</li>
-        <li>Leopard</li>
-        <li>Tiger</li>
-        <li>Puma</li>
-        <li>Cat</li>
-    </ul>
+    <main>
+        <!-- Task list -->
+        <ul id="task-list-container" class="list-view">
+            <li>Jaguar</li>
+            <li>Leopard</li>
+            <li>Tiger</li>
+            <li>Puma</li>
+            <li>Cat</li>
+        </ul>
+
+    </main>
+
 </body>
 </html>
