@@ -8,31 +8,36 @@
     <title>To-do list</title>
 </head>
 <body>
-    <h1>To-Do list</h1>
 
-    <header>
-        <!-- Input and add button -->
+   <header>
+
+        <h1>To-do list</h1>
+
+        <!-- input and add button -->
         <div id="add-container">
-            <input type="text" id="task-input" placeholder="Add a new task...">
+            <input type="text" id="task-input" placeholder="Add a new task ...">
+            <input type="color" id="color-picker" >
             <button id="add-btn">+</button>
         </div>
 
-        <!-- View toggle -->
+        <!-- view list mode toggle -->
         <div id="view-toggle-container">
-            <button id="list-view-btn" class="toggle-btn active">List view</button>
+            <button id="list-view-btn" class="toggle-btn">List view</button>
             <button id="card-view-btn" class="toggle-btn">Card view</button>
         </div>
-    </header>
 
-    <main>
-        <!-- Task list -->
+   </header>
+
+   <main>
+        <!-- to-do list -->
+        <!-- toggle between "card-view" and "list-view" class -->
         <ul id="task-list-container" class="list-view">
-            <li>Postpone digital fabrication</li>
-            <li>Understand how JS works!</li>
-            <li>Have a nice coffe afterwords</li>
+            <li>Postone digital fabrication</li>
+            <li>Understand JS</li>
+            <li>Have a break</li>
         </ul>
 
-    </main>
-
+   </main>
+    
 </body>
 </html>
