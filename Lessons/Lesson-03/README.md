@@ -1,6 +1,6 @@
 # Lesson 03
 
-![first screenshot](DOC/assignment_01_01.png)
+![first screenshot](DOC/assignment_01_02.png)
 
 ## Goal
 
