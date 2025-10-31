@@ -33,3 +33,7 @@ flowchart TD
 ![first screenshot](DOC/todo_list_01.png)
 
 ![second screenshot](DOC/todo_list_02.png)
+
+![second screenshot](DOC/todo_list_03.png)
+
+![second screenshot](DOC/todo_list_04.png)
