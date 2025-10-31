@@ -30,6 +30,6 @@ flowchart TD
 
 ## Schreenshots
 
-![first screenshot](DOC/assignment_01_01.png)
+![first screenshot](DOC/todo_list_01.png)
 
-![second screenshot](DOC/assignment_01_02.png)
+![second screenshot](DOC/todo_list_02.png)
