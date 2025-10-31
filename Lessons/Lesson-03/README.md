@@ -1,7 +1,5 @@
 # Lesson 03
 
-![first screenshot](DOC/assignment_01_02.png)
-
 ## Goal
 
 Starting from the concept of a pinboard, implement a web page that:
