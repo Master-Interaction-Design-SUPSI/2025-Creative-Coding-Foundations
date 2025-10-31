@@ -22,9 +22,9 @@ flowchart TD
     n3 --> n4["create new i<br>element with the<br>content input"]
     n4 --> n5["append it to the ul"]
     n5 --> n6["clear the input text"]
-    n7 --> n8["remove from the ul<br>the class card-view"]
+    n7 --> n8["remove the class card-view<br> from the ul"]
     n8 --> n9["add the class list-view<br>to the ul"]
-    n10 --> n11["remove from the ul<br>the class list-view"]
+    n10 --> n11["remove the class list-view<br> from the ul"]
     n11 --> n12["add the class card-view<br>to the ul"]
 ```
 
