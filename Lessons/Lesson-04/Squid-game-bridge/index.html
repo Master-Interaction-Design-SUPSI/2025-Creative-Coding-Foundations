@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+    <title>Squid Game Demo</title>
+</head>
+<body>
+    <header>
+        <h1>Squid Game Bridge</h1>
+        <p id="game-intro">Avoid the traps along the path</p>
+        <p id="game-instructions">UP: jump the next tile | RIGHT: one step forward</p>
+        <p id="score-container">Score: <span id="score">0</span></p>
+    </header>
+
+    <main>
+        <div id="popup-banner">
+            <div id="banner-content">
+                <p id="game-outcome"></p>
+                <button id="close-banner-btn">Continue</button>
+            </div>
+        </div>
+
+        <ul id="path-container">
+        </ul>
+    </main>
+</body>
+</html>
