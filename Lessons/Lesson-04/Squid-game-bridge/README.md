@@ -2,11 +2,20 @@
 
 ## Brief
 
-Create a Squid Game style 
+Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requirements are:
+
+- The webpage should be responsive
+- Choose an avatar at the beginning of the game
+- Keep track of the score of the player
+- Use the keyboard to control the game (indicate what are the controls in the page). You can also use buttons (mouse), but also keyboard.
+- Use some multimedia files (audio, video, …)
+- Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Project description
 
+The goal of the game conists in reaching the end of the bridge skipping the traps. If you step on a trapped tile, you will fail and start over from the start of the bridge. Every time you reach the end of the bridge, you win and your score increases.
 
+To move along the bridge, you can jump the next tile with the up arrow key, or move one tile forward with the right arrow key.
 
 ## Flowchart
 
@@ -34,3 +43,4 @@ flowchart TD
 ```
 
 ## Function list
+
