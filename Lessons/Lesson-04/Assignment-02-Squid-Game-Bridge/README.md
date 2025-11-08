@@ -153,3 +153,11 @@ It adds the message to the paragraph inside the banner with the win or fail mess
 **Return** none
 
 Update the score adding 1 to it. Update the span element with the new score.
+
+## Content and data source
+
+[Game of squids font](https://www.fonts4free.net/game-of-squids-font.html)
+
+[Win sound](https://pixabay.com/sound-effects/marimba-win-b-2-209675/)
+
+[Fail sound](https://pixabay.com/sound-effects/fail-234710/)
