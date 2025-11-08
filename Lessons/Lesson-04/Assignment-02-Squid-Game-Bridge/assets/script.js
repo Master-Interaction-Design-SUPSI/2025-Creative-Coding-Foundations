@@ -124,4 +124,5 @@ function updateScore() {
     scoreBoard.innerHTML = scores;
 }
 
+// starting point!
 newAttempt();
