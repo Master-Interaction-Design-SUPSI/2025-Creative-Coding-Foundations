@@ -143,6 +143,8 @@ Else, if it is not a trap, nothing happens, and the game waits for the user pres
 
 **Return** none
 
+It adds the message to the paragraph inside the banner with the win or fail message, and it adds the class 'active' to the banner (display flex to make it visible and centered) as well as the class from the variable 'result' that defines the background color of the banner (orange if failed, blue if won).
+
 ---
 ### updateScore()
 
